@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Stranecka</title>
+</head>
+<body>
+    <header>
+        <div class="BlueTop">
+            &#8203;
+            <div class="navigationBar">
+                <a href="index.html"><div class="navButton">Domů</div>  </a>
+                <a href="sluzby.html"><div class="navButton" >Služby</div>      </a>
+                <a href="galerie.html"><div class="navButton" id="selected">Galerie</div>     </a>
+                <a href="kontakt.html"><div class="navButton" >Kontakt</div>     </a>
+            </div>
+        </div>
+    </header>
+    &#8203;
+    <div class="layout">
+        <img src="elektropcelogo.png" class="pceLogo">
+        <main>
+            <div class="mainBlog">
+                <div class="vitejTitle">
+                    <h2>
+                        Galerie
+
+                    </h2>
+                </div>
+                <h3>
+                    <div class="lokaceTitle"> Dubany </div>
+                </h3>
+
+                <div>
+                    Novostavba patrového bytu v řadovém domě.
+V bytě bylo použito ve většině místnostech převážně LED osvětlení, a to včetně koupelny. <br> Na přání zákazníka byl také zvolen speciální typ vypínačů a zásuvek v černém designu. <br> Samozřejmostí instalace bylo konečné otestování a provedení výchozí revize.
+
+                </div>
+                <div class="otevritFotky" onclick="otevritDubany()"> Ukazat Fotky </div>
+
+                <div class="galerieHolder" id="dubanyFotky">
+                    <img src="dubany/dubany1.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                    <img src="dubany/dubany2.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                    <img src="dubany/dubany3.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                    <img src="dubany/dubany4.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                    <img src="dubany/dubany5.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                    <img src="dubany/dubany6.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                    <img src="dubany/dubany8.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                </div>
+
+
+                <h3>
+                    <div class="lokaceTitle"> Podlahové vytápění </div>
+                </h3>
+
+                <div>
+                    Podlahové vytápění v novostavbě.
+                </div>
+                <div class="otevritFotky" onclick="otevritPodlahy()"> Ukazat Fotky </div>
+
+                <div class="galerieHolder" id="podlahyFotky">
+                    <img src="vytapeni/vytapeni1.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                    <img src="vytapeni/vytapeni2.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                    <img src="vytapeni/vytapeni3.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+
+                </div>
+
+              
+            </div>
+        </main>
+        <div id="emptyElement"> </div>
+    </div>
+    <div id="projektor" onclick="zavritProjektor()">
+        <img id="projektorImg">
+    </div>
+    <footer>
+        <div class="foot">
+            &#8203;
+            
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
