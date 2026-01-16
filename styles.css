@@ -9,22 +9,21 @@
 }
 .navigationBar {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    gap: 20px;
-    justify-content: end;
+    grid-template-columns: repeat(8, auto);
+    gap: 10px;
+    justify-content: center;
     padding-right: 20px;
     margin: auto 0;
     background-color: #142c53;
     height: fit-content;
 }
-
-.navButton {
-    color: black;
-    font-size: 20px;
+.navDivider{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
 }
-
 body {
-    background-color: #f7e4ca;
+    background: linear-gradient(to bottom, #f7e4ca, #fad6a4);
 }
 
 
@@ -33,11 +32,10 @@ body {
     min-height: 8vh;  
     display: flex;
     align-items: center; /* vertical centering */
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .pceLogo {
-    margin-top: 10px;
     margin-left: 30px;
     display: inline-block;
     width: fit-content;
@@ -47,21 +45,18 @@ body {
     width: fit-content;
     height: fit-content;
 
-    background-color: #f7e4ca;
-    border-radius: 6px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+
+    color: white;
+
+    font-size: 20px;
+    padding: 10px 30px 10px 30px;
 
     transition: 100ms;
 }
 
 .navButton:hover {
-    background-color:#f7cd93;
-    border: 1px black solid;
     transform: scale(1.14);
-}
+} 
 
 .layout {
     display: flex;
@@ -72,9 +67,12 @@ body {
 
 
 main {
-    margin-top: 90px;
+    margin: 0 auto;
+    padding-top: 20px;
     width: 60vw;
-    min-height: 80vh;
+    min-height: 85vh;
+    background-color: #f7e4ca;
+
     
 }
 
@@ -93,13 +91,13 @@ main {
 @media (max-width: 726px) {
 
     .navigationBar {
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(7, auto);
         justify-content: center;
         padding-bottom: 10px;
     }
     .pceLogo {
-        margin-left: 0;   
-        margin-top: 35px;
+        margin: 0 auto;
+        display: block;
     }
     .BlueTop {
         padding-top: 10px;
@@ -111,14 +109,19 @@ main {
 .mainBlog {
     margin-top: 15px;
     font-size: 18px;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+#mapa {
+    margin: 0 auto;
+}
+.mainBlog ul{
+    padding-left: 50px;
 }
 
 #selected {
-    color: darkblue;
-    background-color:#f7cd93;
-    border: 1px black solid;
-
-}
+    border-bottom: 2px white solid;
+} 
 
 .vitejTitle {
     font-size: 30px;
@@ -139,9 +142,34 @@ a {
 
 .foot {
     max-width: 100vw;
+    margin-bottom: 0;
     background-color: #142c53;
-    height: 10vh;
+    height: 8vh;
+    
 }
+#footerText {
+    margin: 0 auto;
+    width: fit-content;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#footerText a{
+    color: white;
+    text-decoration: none;
+    transition: 100ms;
+}
+
+.dalsiProvadime {
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 20px;
+    font-size: 25px;
+    padding-right: 70px;
+    font-weight: bold;
+}
+
 #emptyElement {
     width: 283px;
     height: 53px;
@@ -177,12 +205,15 @@ li {
 }
 .mainBlogText {
     margin-top: 25px;
+    line-height: 2;
     
 }
 
 .lokaceTitle {
     width: fit-content;
-
+    margin: 0 auto;
+    font-size: 25px;
+    padding-top: 20px;
 }
 .galerieHolder {
     margin-top: 25px;
@@ -229,6 +260,7 @@ li {
 .otevritFotky:hover{
     background-color:#ecad54;
     transform: scale(1.1);
+    cursor: pointer;
 }
 .kontakty {
     margin: 0 auto;
@@ -237,6 +269,7 @@ li {
     width: fit-content;
     display: flex;
     gap: 100px;
+    flex-wrap: repea;
     
 }
 .kontakty img {
@@ -261,4 +294,26 @@ li {
 .copy:hover{
     background-color: #f7e4ca;
     transform: scale(1.1);
+}
+.galerieRadkovani {
+    line-height: 1.5;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.frameHolder {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+.lokace{
+    margin: 0 auto;
+    display: block;
+    background-color: #f8debb;
+    border-radius: 10px;
+    border: 1px #142c53 solid;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 10px;
 }

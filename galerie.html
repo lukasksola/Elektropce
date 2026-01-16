@@ -13,16 +13,21 @@
             &#8203;
             <div class="navigationBar">
                 <a href="index.html"><div class="navButton">Domů</div>  </a>
-                <a href="sluzby.html"><div class="navButton" >Služby</div>      </a>
+                <div class="navDivider"> | </div>
+                <a href="sluzby.html"><div class="navButton">Služby </div>      </a>
+                <div class="navDivider"> | </div>
                 <a href="galerie.html"><div class="navButton" id="selected">Galerie</div>     </a>
-                <a href="kontakt.html"><div class="navButton" >Kontakt</div>     </a>
+                <div class="navDivider"> | </div>
+                <a href="kontakt.html"><div class="navButton">Kontakt</div>     </a>
             </div>
         </div>
     </header>
-    &#8203;
     <div class="layout">
-        <img src="elektropcelogo.png" class="pceLogo">
         <main>
+            <a href="index.html">
+                <img src="elektropcelogo.png" class="pceLogo">
+            </a>
+
             <div class="mainBlog">
                 <div class="vitejTitle">
                     <h2>
@@ -30,48 +35,49 @@
 
                     </h2>
                 </div>
-                <h3>
-                    <div class="lokaceTitle"> Dubany </div>
-                </h3>
+                <div class="lokace">
+                    <h3>
+                        <div class="lokaceTitle"> Dubany </div>
+                    </h3>
 
-                <div>
-                    Novostavba patrového bytu v řadovém domě.
-V bytě bylo použito ve většině místnostech převážně LED osvětlení, a to včetně koupelny. <br> Na přání zákazníka byl také zvolen speciální typ vypínačů a zásuvek v černém designu. <br> Samozřejmostí instalace bylo konečné otestování a provedení výchozí revize.
+                    <div class="galerieRadkovani">
+                        Novostavba patrového bytu v řadovém domě.
+    V bytě bylo použito ve většině místnostech převážně LED osvětlení, a to včetně koupelny. <br> Na přání zákazníka byl také zvolen speciální typ vypínačů a zásuvek v černém designu. <br> Samozřejmostí instalace bylo konečné otestování a provedení výchozí revize.
 
-                </div>
-                <div class="otevritFotky" onclick="otevritDubany()"> Ukazat Fotky </div>
+                    </div>
+                    <div class="otevritFotky" onclick="otevritDubany()" id="fotkyDubOtevrit"> Fotky </div>
 
-                <div class="galerieHolder" id="dubanyFotky">
-                    <img src="dubany/dubany1.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
-                    <img src="dubany/dubany2.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
-                    <img src="dubany/dubany3.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
-                    <img src="dubany/dubany4.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
-                    <img src="dubany/dubany5.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
-                    <img src="dubany/dubany6.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
-                    <img src="dubany/dubany8.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
-                </div>
-
-
-                <h3>
-                    <div class="lokaceTitle"> Podlahové vytápění </div>
-                </h3>
-
-                <div>
-                    Podlahové vytápění v novostavbě.
-                </div>
-                <div class="otevritFotky" onclick="otevritPodlahy()"> Ukazat Fotky </div>
-
-                <div class="galerieHolder" id="podlahyFotky">
-                    <img src="vytapeni/vytapeni1.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
-                    <img src="vytapeni/vytapeni2.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
-                    <img src="vytapeni/vytapeni3.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                    <div class="galerieHolder" id="dubanyFotky">
+                        <img src="dubany/dubany1.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                        <img src="dubany/dubany2.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                        <img src="dubany/dubany3.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                        <img src="dubany/dubany4.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                        <img src="dubany/dubany5.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                        <img src="dubany/dubany6.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                        <img src="dubany/dubany8.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                    </div>
 
                 </div>
+                <div class="lokace">
+                    <h3>
+                        <div class="lokaceTitle"> Podlahové vytápění </div>
+                    </h3>
 
+                    <div class="galerieRadkovani">
+                        Podlahové vytápění v novostavbě.
+                    </div>
+                    <div class="otevritFotky" onclick="otevritPodlahy()" id="fotkyPodOtevrit">  Fotky </div>
+
+                    <div class="galerieHolder" id="podlahyFotky">
+                        <img src="vytapeni/vytapeni1.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                        <img src="vytapeni/vytapeni2.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+                        <img src="vytapeni/vytapeni3.jpeg" class="galerieImg" onclick="otevritProjektor(this.src)">
+
+                    </div>
+                </div>
               
             </div>
         </main>
-        <div id="emptyElement"> </div>
     </div>
     <div id="projektor" onclick="zavritProjektor()">
         <img id="projektorImg">
@@ -79,7 +85,9 @@ V bytě bylo použito ve většině místnostech převážně LED osvětlení, a
     <footer>
         <div class="foot">
             &#8203;
-            
+            <div id="footerText">
+            Lukáš Rais | 2026 | <a href="http://www.elektropce.cz/">elektropce.cz</a>
+            </div>
         </div>
     </footer>
     <script src="script.js"></script>

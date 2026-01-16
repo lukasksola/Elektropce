@@ -13,16 +13,22 @@
             &#8203;
             <div class="navigationBar">
                 <a href="index.html"><div class="navButton">Domů</div>  </a>
-                <a href="sluzby.html"><div class="navButton" >Služby</div>      </a>
+                <div class="navDivider"> | </div>
+                <a href="sluzby.html"><div class="navButton">Služby </div>      </a>
+                <div class="navDivider"> | </div>
                 <a href="galerie.html"><div class="navButton">Galerie</div>     </a>
+                <div class="navDivider"> | </div>
                 <a href="kontakt.html"><div class="navButton" id="selected">Kontakt</div>     </a>
             </div>
         </div>
     </header>
-    &#8203;
     <div class="layout">
-        <img src="elektropcelogo.png" class="pceLogo">
+        
         <main>
+            <a href="index.html">
+                <img src="elektropcelogo.png" class="pceLogo">
+            </a>
+
             <div class="mainBlog">
                 <div class="vitejTitle">
                 <h2>   Kontakt </h2>
@@ -37,18 +43,22 @@
                         <li>email: <span id="email">info@elektropce.cz </span> </li> <div class="copy" onclick="copyEmail()"> Copy </div> 
                     </ul>
                     <img src="dittrt.jfif">
+                    
                 </div>
-                
+                <div class="frameHolder">
+                    <iframe style="border: 1px black solid" src="https://mapy.com/s/nolovenofe" width="700" height="466" frameborder="0"></iframe>
+                </div>
                 
 
             </div>
         </main>
-        <div id="emptyElement"> </div>
     </div>
     <footer>
         <div class="foot">
             &#8203;
-            
+            <div id="footerText">
+            Lukáš Rais | 2026 | <a href="http://www.elektropce.cz/">elektropce.cz</a>
+            </div>
         </div>
     </footer>
     <script src="script.js"></script>
